@@ -1,0 +1,47 @@
+:root {
+    --text-color: #333;
+    --background-color: #f0f0f0;
+    --link-color: #1a73e8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* navbar styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    /* background-color adds border */
+    /*background-color: #fff; */
+}
+nav .left a {
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+nav .right a {
+    margin-left: 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
