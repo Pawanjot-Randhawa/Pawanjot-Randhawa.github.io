@@ -45,14 +45,84 @@ nav .right a {
     font-weight: 600;
     color: var(--text-color);
 }
+
 main {
     padding: 2rem;
     max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-main .about {
+/*about styles */
+.about {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 2rem;
+}
+.about .about-content h1{
+    font-size:  2.5rem;
+    margin-bottom: 1rem;
+}
+.about .about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+.about .about-content .links {
+    margin-top: 1rem;
+}
+.about .about-content .links a {
+    margin: 0 0.5rem;
+    color: var(--link-color);
+    font-weight: bold;
+    border : 1px solid var(--link-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.about .about-content .links a:hover {
+    background-color: var(--text-color);
+    border: 1px solid var(--text-color);
+    color: #fff;
+}
+/* skills styles */
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+.skills-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.skills-section .cells {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skills-section .cell {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 200px;
+    text-align: center;
+}
+.skills-section .cell span {
+    display: block;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+.skills-section .cell i{
+    font-size: 2rem;
+    margin-right: 0.2rem;
 }
