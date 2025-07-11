@@ -101,6 +101,17 @@ main {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
+.skills-section p {
+    font-size: 1.2rem;
+    margin: 1rem;
+    max-width: 800px;
+}
+.skills-section h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
 .skills-section .cells {
     display: flex;
     flex-wrap: wrap;
