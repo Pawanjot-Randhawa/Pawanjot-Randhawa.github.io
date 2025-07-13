@@ -192,6 +192,16 @@ main {
     color: var(--link-color);
     margin-bottom: 1rem;
 }
+.projects .project-details:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.projects .project-details p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
 .projects .project-details .project-github a{
     margin-top: 1rem;
     color: var(--text-color);
@@ -202,6 +212,43 @@ main {
     transition: background-color 0.3s, color 0.3s;
 }
 .projects .project-details .project-github a:hover {
+    background-color: var(--text-color);
+    color: #fff;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+.contacts h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.contacts p {
+    font-size: 1.2rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+}
+.contacts .contact-details {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.5rem;
+}
+.contacts .contact-item a{
+    color: var(--text-color);
+    font-weight: bold;
+    border : 1px solid var(--text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+.contacts .contact-item:hover a{
     background-color: var(--text-color);
     color: #fff;
 }
