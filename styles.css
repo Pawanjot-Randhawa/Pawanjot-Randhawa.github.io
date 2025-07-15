@@ -215,6 +215,12 @@ main {
     background-color: var(--text-color);
     color: #fff;
 }
+.projects .project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
 .contacts {
     display: flex;
     flex-direction: column;
