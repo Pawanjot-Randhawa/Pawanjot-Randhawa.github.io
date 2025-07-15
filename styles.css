@@ -74,6 +74,11 @@ main {
 }
 .about .about-content .links {
     margin-top: 1rem;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    row-gap: 1rem;
 }
 .about .about-content .links a {
     margin: 0 0.5rem;
