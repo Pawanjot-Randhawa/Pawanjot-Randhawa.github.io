@@ -94,6 +94,111 @@ main {
     border: 1px solid var(--text-color);
     color: #fff;
 }
+/* experience styles */
+.experience-section {
+    width: 100%;
+    max-width: 900px;
+    padding: 2rem;
+}
+.experience-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.experience-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1.5rem;
+}
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    margin-bottom: 1rem;
+}
+.experience-identity {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-width: 0;
+}
+.experience-logo {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    object-fit: contain;
+    border-radius: 5px;
+}
+.experience-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.35rem;
+}
+.experience-company,
+.experience-dates {
+    line-height: 1.6;
+}
+.experience-dates {
+    font-size: 0.95rem;
+}
+.experience-card ul {
+    padding-left: 1.25rem;
+    line-height: 1.7;
+}
+.experience-card li + li {
+    margin-top: 0.65rem;
+}
+@media (max-width: 600px) {
+    .experience-section {
+        padding: 2rem 0;
+    }
+    .experience-card {
+        padding: 1rem;
+    }
+}
+.experience-showcase {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+}
+.experience-showcase summary {
+    color: var(--link-color);
+    font-weight: 700;
+    cursor: pointer;
+}
+.experience-showcase summary:focus-visible,
+.experience-gallery a:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 4px;
+}
+.experience-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.experience-gallery a {
+    display: block;
+    border-radius: 5px;
+}
+.experience-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.experience-gallery figcaption {
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    .experience-gallery {
+        grid-template-columns: 1fr;
+    }
+}
 /* skills styles */
 .skills-section {
     display: flex;
